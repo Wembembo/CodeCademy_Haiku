@@ -67,6 +67,7 @@ let haikuLine3 =["And I disappear",
 
 function haikuStorage(input){
     var output = [input];
+    document.getElementById("haikuBox").classList.remove("invisible");
     return output;
 }
 
@@ -74,3 +75,5 @@ function haikuStorage(input){
 const haiku = `${haikuLine1[Math.floor(Math.random() * haikuLine1.length)]}` + `${haikuLine2[Math.floor(Math.random() * haikuLine2.length)]}` + `${haikuLine3[Math.floor(Math.random() * haikuLine3.length)]}`;
 
 console.log(haikuStorage(haiku));
+
+document.getElementById("haikuBox").innerHTML = haiku;
